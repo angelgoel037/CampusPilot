@@ -13,17 +13,15 @@ Direct commits to `main` are restricted. All development must occur on dedicated
 ```text
 main
  │
- ├── feat/angel/*      # Product, Content, UX/UI Specifications & Demo
- ├── feat/nidhi/*      # Frontend, PWA, Navigation, Student Views
- ├── feat/jayant/*     # Backend, Supabase Persistence, Publisher Flow
+ ├── feat/angel/*      # Product, Content, UX/UI Specifications, Demo, Frontend, PWA, Navigation, Student Views, Backend, Supabase Persistence, Publisher Flow
  └── feat/prabhav/*    # AI Extraction, Recommendation Engine, Plan Logic
 ```
 
 ### Examples
-- `feat/nidhi/onboarding-chips`
-- `feat/jayant/supabase-schema-migration`
+- `feat/angel/onboarding-chips`
+- `feat/angel/supabase-schema-migration`
 - `feat/prabhav/recommendation-scoring-heuristic`
-- `fix/nidhi/empty-feed-state`
+- `fix/angel/empty-feed-state`
 - `chore/phase-0/bootstrap`
 
 ---
@@ -45,10 +43,10 @@ We follow the Conventional Commits specification.
 - `test`: Adding or modifying tests
 
 ### Examples
-- `feat(nidhi): implement interest onboarding selection chips`
-- `feat(jayant): add campus item persistence repository`
-- `feat(prabhav): implement time conflict detection logic`
-- `fix(nidhi): handle zero match fallback in personalized feed`
+- `feat(angel): implement interest onboarding selection chips`
+- `feat(angel): add campus item persistence repository`
+- `feat(angel): implement time conflict detection logic`
+- `fix(angel): handle zero match fallback in personalized feed`
 - `chore(phase-0): bootstrap CampusPilot codebase`
 
 ---
