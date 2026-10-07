@@ -59,6 +59,18 @@ export const CATEGORY_LABELS: Record<CampusCategory, { label: string; icon: stri
     icon: '📢',
     description: 'MST/exam notices, result declarations, university circulars',
   },
+
+  cultural_music: {
+    label: 'Cultural & Music',
+    icon: '🎵',
+    description: 'Legacy cultural and music category',
+  },
+
+  academic_important: {
+    label: 'Academic & Notices',
+    icon: '📢',
+    description: 'Legacy academic and important notices category',
+  },
 };
 
 export const LEGACY_CATEGORY_LABELS: Record<(typeof LEGACY_CAMPUS_CATEGORIES)[number], { label: string; icon: string; description: string }> = {
