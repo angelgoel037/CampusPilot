@@ -1,0 +1,255 @@
+{
+  "_comment": "CampusPilot — Deterministic Demo Scenario. This file defines exactly one student persona and the minimal set of campus items required to demonstrate all 7 demo scenes. All items use the existing CampusItem schema from src/domain/campus-item/types.ts. Do NOT add fields not present in CampusItem.",
+
+  "scenario": {
+    "id": "demo-scenario-v1",
+    "name": "Angel — Primary Demo Persona",
+    "description": "3-minute hackathon demo. Student interests: Technical, Cultural, Sports. Demonstrates: personalization, urgency, institutional integrity, explainability, plan creation, conflict detection.",
+    "version": "1.0",
+    "createdBy": "Angel (Phase 3 Product QA)",
+    "demoScenes": [1, 2, 3, 4, 5, 6, 7]
+  },
+
+  "student": {
+    "id": "demo-student-angel",
+    "name": "Angel",
+    "year": "3rd Year",
+    "department": "Computer Science & Engineering",
+    "selectedCategories": ["technical", "cultural", "sports"],
+    "isOnboardingCompleted": true,
+    "updatedAt": "2026-10-19T08:00:00Z",
+    "_note": "selectedCategories must not include 'important_campus' — that is always delivered regardless."
+  },
+
+  "campusItems": [
+    {
+      "id": "ci-demo-tech-01",
+      "_demoScene": "Scene 2 (Don't Miss), Scene 3 (For You), Scene 4 (Explainability), Scene 5 (My Plan)",
+      "_acceptanceCriteria": ["AC-001", "AC-005", "AC-006", "AC-007", "AC-010", "AC-011", "AC-012"],
+      "_purpose": "High-urgency technical event. Registration deadline is tonight. Triggers Don't Miss section and demonstrates explainable 94% match.",
+      "title": "Campus AI & Robotics Hackathon 2026",
+      "description": "36-hour flagship hackathon building intelligent agents, embedded robotics, and generative AI solutions. Mentorship from leading tech founders and prize pool.",
+      "category": "technical",
+      "subCategory": "hackathon",
+      "date": "2026-10-19",
+      "startTime": "09:00",
+      "endTime": "21:00",
+      "venue": "Innovation & Incubation Hub, Block C",
+      "organizer": "Google Developer Student Club & Robotics Society",
+      "registrationUrl": "https://campuspilot.dev/register/ai-hackathon",
+      "deadline": "2026-10-19T23:59:00Z",
+      "audience": "all_students",
+      "importance": "high",
+      "tags": ["ai", "robotics", "hackathon", "coding", "prize"],
+      "source": "publisher_manual",
+      "status": "published",
+      "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+      "createdAt": "2026-10-15T09:00:00Z",
+      "updatedAt": "2026-10-15T09:00:00Z"
+    },
+    {
+      "id": "ci-demo-cult-01",
+      "_demoScene": "Scene 3 (For You), Scene 5 (My Plan), Scene 6 (Conflict — overlaps with Wellness at 16:30)",
+      "_acceptanceCriteria": ["AC-005", "AC-012", "AC-014", "AC-015", "AC-016"],
+      "_purpose": "Cultural event in student's interests. On Oct 19, 16:30-19:00 — creates time conflict with Wellness session (16:00-17:30).",
+      "title": "Nukkad Natak Street Play Championship",
+      "description": "Impactful street plays tackling burning social and environmental issues across major university quadrangles.",
+      "category": "cultural",
+      "subCategory": "drama_theatre",
+      "date": "2026-10-19",
+      "startTime": "16:30",
+      "endTime": "19:00",
+      "venue": "Central Quadrangle",
+      "organizer": "Dramatics Society",
+      "registrationUrl": null,
+      "deadline": null,
+      "audience": "all_students",
+      "importance": "normal",
+      "tags": ["theatre", "drama", "nukkad-natak", "cultural"],
+      "source": "poster_extraction",
+      "status": "published",
+      "imageUrl": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80",
+      "createdAt": "2026-10-15T10:00:00Z",
+      "updatedAt": "2026-10-15T10:00:00Z"
+    },
+    {
+      "id": "ci-demo-sports-01",
+      "_demoScene": "Scene 3 (For You)",
+      "_acceptanceCriteria": ["AC-005", "AC-007"],
+      "_purpose": "Sports event in student's interests. Demonstrates sports category match in For You section.",
+      "title": "Inter-Department Basketball Championship Semifinals",
+      "description": "High-octane knockout clash between CSE Knights and ECE Titans. Come cheer for your department from the bleachers!",
+      "category": "sports",
+      "subCategory": "basketball",
+      "date": "2026-10-20",
+      "startTime": "17:00",
+      "endTime": "19:00",
+      "venue": "Indoor Sports Complex Court 1",
+      "organizer": "Campus Sports Council",
+      "registrationUrl": null,
+      "deadline": null,
+      "audience": "all_students",
+      "importance": "normal",
+      "tags": ["sports", "basketball", "inter-department", "tournament"],
+      "source": "poster_extraction",
+      "status": "published",
+      "imageUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=800&q=80",
+      "createdAt": "2026-10-15T14:00:00Z",
+      "updatedAt": "2026-10-15T14:00:00Z"
+    },
+    {
+      "id": "ci-demo-acad-01",
+      "_demoScene": "Scene 3 (Important Campus)",
+      "_acceptanceCriteria": ["AC-008", "AC-020"],
+      "_purpose": "Critical MST announcement. Demonstrates institutional integrity rule — appears in Important Campus regardless of selected interests.",
+      "title": "Mid-Semester Examination (MST) Official Datesheet Released",
+      "description": "Official schedule for Odd Semester Mid-Term Examinations (October 2026). Please check your department-specific seating plans and hall ticket requirements on the student portal.",
+      "category": "important_campus",
+      "subCategory": "exam_notification",
+      "date": "2026-10-19",
+      "startTime": "09:00",
+      "endTime": "17:00",
+      "venue": "Academic Block Examination Halls",
+      "organizer": "Office of the Controller of Examinations",
+      "registrationUrl": null,
+      "deadline": null,
+      "audience": "all_students",
+      "importance": "critical",
+      "tags": ["mst", "exams", "datesheet", "official", "circular"],
+      "source": "publisher_manual",
+      "status": "published",
+      "imageUrl": null,
+      "createdAt": "2026-10-15T08:00:00Z",
+      "updatedAt": "2026-10-15T08:00:00Z"
+    },
+    {
+      "id": "ci-demo-well-01",
+      "_demoScene": "Scene 3 (Explore Something New), Scene 5 (My Plan), Scene 6 (Conflict — overlaps with Nukkad Natak at 16:30)",
+      "_acceptanceCriteria": ["AC-009", "AC-012", "AC-014", "AC-015", "AC-016", "AC-017"],
+      "_purpose": "Wellness item OUTSIDE student's selected interests. Appears in Explore Something New (serendipity). On Oct 19, 16:00-17:30 — creates time conflict with Nukkad Natak (16:30-19:00). Demonstrates conflict detection.",
+      "title": "Mindfulness & Stress Management for Midterms",
+      "description": "Learn practical breathwork, focus techniques, and exam anxiety management guided by certified psychologists from the counseling center.",
+      "category": "wellness",
+      "subCategory": "stress_management",
+      "date": "2026-10-19",
+      "startTime": "16:00",
+      "endTime": "17:30",
+      "venue": "Student Wellness Lounge, 2nd Floor",
+      "organizer": "Student Counseling Center",
+      "registrationUrl": "https://campuspilot.dev/register/wellness-session",
+      "deadline": "2026-10-19T12:00:00Z",
+      "audience": "all_students",
+      "importance": "normal",
+      "tags": ["wellness", "mental-health", "mindfulness", "stress-relief"],
+      "source": "publisher_manual",
+      "status": "published",
+      "imageUrl": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80",
+      "createdAt": "2026-10-15T12:00:00Z",
+      "updatedAt": "2026-10-15T12:00:00Z"
+    },
+    {
+      "id": "ci-demo-cult-02",
+      "_demoScene": "Scene 3 (For You — Acoustic Open Mic as Cultural match)",
+      "_acceptanceCriteria": ["AC-005", "AC-007"],
+      "_purpose": "Cultural music event matching student's Cultural interest. Appears in For You with match explanation.",
+      "title": "Acoustic Night & Open Mic Under the Stars",
+      "description": "Showcase your musical talents, poetry, and stand-up performances under the campus amphitheatre stars with fairy lights and warm chai.",
+      "category": "cultural",
+      "subCategory": "music",
+      "date": "2026-10-20",
+      "startTime": "18:30",
+      "endTime": "21:30",
+      "venue": "Open Air Amphitheatre",
+      "organizer": "Music & Performing Arts Club",
+      "registrationUrl": "https://campuspilot.dev/register/open-mic",
+      "deadline": "2026-10-19T18:00:00Z",
+      "audience": "all_students",
+      "importance": "normal",
+      "tags": ["music", "open-mic", "acoustic", "poetry", "cultural"],
+      "source": "poster_extraction",
+      "status": "published",
+      "imageUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80",
+      "createdAt": "2026-10-15T11:30:00Z",
+      "updatedAt": "2026-10-15T11:30:00Z"
+    }
+  ],
+
+  "conflictPairs": [
+    {
+      "_note": "This pair demonstrates Scene 6. Both events are on Oct 19. They overlap: 16:00-17:30 and 16:30-19:00.",
+      "itemA": "ci-demo-well-01",
+      "itemB": "ci-demo-cult-01",
+      "overlapStart": "16:30",
+      "overlapEnd": "17:30",
+      "conflictDate": "2026-10-19",
+      "acceptanceCriteria": ["AC-015", "AC-016"]
+    }
+  ],
+
+  "recommendationExpectations": [
+    {
+      "itemId": "ci-demo-tech-01",
+      "expectedScore": 94,
+      "expectedReasons": [
+        "Matches your Technical interest",
+        "Happening today",
+        "Registration closes tonight"
+      ],
+      "expectedSection": "dont_miss",
+      "acceptanceCriteria": ["AC-006", "AC-007"]
+    },
+    {
+      "itemId": "ci-demo-cult-02",
+      "expectedScore": 88,
+      "expectedReasons": [
+        "Matches your Cultural interest"
+      ],
+      "expectedSection": "for_you",
+      "acceptanceCriteria": ["AC-007"]
+    },
+    {
+      "itemId": "ci-demo-sports-01",
+      "expectedScore": 82,
+      "expectedReasons": [
+        "Matches your Sports interest"
+      ],
+      "expectedSection": "for_you",
+      "acceptanceCriteria": ["AC-007"]
+    },
+    {
+      "itemId": "ci-demo-acad-01",
+      "expectedScore": null,
+      "_note": "Important Campus items bypass scoring. They are never ranked by interest. They always appear in Section 3.",
+      "expectedSection": "important_campus",
+      "acceptanceCriteria": ["AC-008"]
+    },
+    {
+      "itemId": "ci-demo-well-01",
+      "_note": "Wellness is outside student's selected interests. Should appear in Explore Something New, not For You.",
+      "expectedSection": "explore_something_new",
+      "expectedReasons": ["Outside your usual interests"],
+      "acceptanceCriteria": ["AC-009"]
+    }
+  ],
+
+  "schemaReference": "src/domain/campus-item/types.ts",
+  "contractReference": "docs/phase-2/INTEGRATION-CONTRACT.md",
+  "demoPlanItems": [
+    {
+      "_note": "These are the items to add to My Plan during the demo in order",
+      "step": 1,
+      "itemId": "ci-demo-tech-01",
+      "scene": "Scene 5 (Personal Plan)"
+    },
+    {
+      "step": 2,
+      "itemId": "ci-demo-cult-02",
+      "scene": "Scene 5 (Personal Plan)"
+    },
+    {
+      "step": 3,
+      "itemId": "ci-demo-well-01",
+      "scene": "Scene 6 (Conflict) — this triggers conflict with ci-demo-cult-01 if cult-01 is also in plan"
+    }
+  ]
+}
