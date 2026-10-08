@@ -6,17 +6,27 @@ CampusPilot is a **working hackathon prototype / PWA-style web app** for persona
 
 Students often have to follow many society pages, WhatsApp groups, posters, emails and notice boards to discover campus opportunities. CampusPilot brings the important information into one place and lets a student personalize what they see.
 
+🌐 **Live Demo:** [Try CampusPilot](https://campus-pilot-zj7h.vercel.app/)
+
 ## What the final prototype demonstrates
 
-- **Interest-based onboarding** — choose Technical, Cultural, Sports, Social, Career, Wellness, Learning & Research, or Important Campus.
-- **For You feed** — events are ranked using a transparent weighted recommendation heuristic.
-- **Explainable recommendations** — the UI shows a match score and reasons such as “Matches your interest” or “Happening this week”.
-- **Important Campus channel** — institutional notices remain visible even when a student changes interests.
-- **Explore** — search and filter the campus catalogue.
-- **My Plan** — add events to a personal schedule and remove them later.
-- **Conflict detection** — overlapping events are automatically flagged.
-- **PWA-ready setup** — responsive mobile-first UI and web app manifest.
-- **Offline demo data** — 40 curated campus items are included, so the prototype can be demonstrated without a database or API key.
+🎯 **Interest-based onboarding** — choose Technical, Cultural, Sports, Social, Career, Wellness, Learning & Research, or Important Campus.
+
+❤️ **For You feed** — events are ranked using a transparent weighted recommendation heuristic.
+
+💡 **Explainable recommendations** — the UI shows a match score and reasons such as “Matches your interest” or “Happening this week”.
+
+📢 **Important Campus channel** — institutional notices remain visible even when a student changes interests.
+
+🧭 **Explore** — search and filter the campus catalogue.
+
+📆 **My Plan** — add events to a personal schedule and remove them later.
+
+⚡ **Conflict detection** — overlapping events are automatically flagged.
+
+☑️ **PWA-ready setup** — responsive mobile-first UI and web app manifest.
+
+🛜 **Offline demo data** — 40 curated campus items are included, so the prototype can be demonstrated without a database or API key.
 
 ## Important honesty note
 
@@ -88,8 +98,8 @@ team/                Team work and product documentation
 
 ## Team contribution story
 
-- **Angel** — product scope, content taxonomy, UX/UI, demo flow and curated campus dataset.
-- **Prabhav** — recommendation intelligence, conflict detection, domain/application wiring and functional prototype integration.
+- **Angel** — product scope, content taxonomy, UX/UI, demo flow, curated campus dataset, domain/application wiring and functional prototype integration.
+- **Prabhav** — recommendation intelligence, conflict detection.
 - Earlier team work also defined the frontend/backend contracts and system architecture documented in `docs/`.
 
 This repository is intentionally packaged as a **proof of work / hackathon MVP**, not as a production college ERP.
