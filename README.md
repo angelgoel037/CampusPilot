@@ -8,6 +8,26 @@ Students often have to follow many society pages, WhatsApp groups, posters, emai
 
 🌐 **Live Demo:** [Try CampusPilot](https://campus-pilot-zj7h.vercel.app/)
 
+## 📸 CampusPilot in Action
+
+Explore the interface and see how CampusPilot brings campus discovery and planning together.
+
+### 🏠 Personalized Campus Feed
+
+![CampusPilot Home](./campuspilot-home.png)
+
+### 🧭 Explore Campus Opportunities
+
+![CampusPilot Explore](./campuspilot-explore.png)
+
+### 🎯 Personalize Your Interests
+
+![CampusPilot Interests](./campuspilot-interests.png)
+
+### 📅 Plan Your Campus Life
+
+![CampusPilot My Plan](./campuspilot-plan.png)
+
 ## What the final prototype demonstrates
 
 🎯 **Interest-based onboarding** — choose Technical, Cultural, Sports, Social, Career, Wellness, Learning & Research, or Important Campus.
