@@ -14,19 +14,19 @@ Explore the interface and see how CampusPilot brings campus discovery and planni
 
 ### 🏠 Personalized Campus Feed
 
-![CampusPilot Home](./campuspilot-home.png)
+![CampusPilot Home](./campuspilot-home.png.jpg)
 
 ### 🧭 Explore Campus Opportunities
 
-![CampusPilot Explore](./campuspilot-explore.png)
+![CampusPilot Explore](./campuspilot-explore.png.jpg)
 
 ### 🎯 Personalize Your Interests
 
-![CampusPilot Interests](./campuspilot-interests.png)
+![CampusPilot Interests](./campuspilot-interests.png.jpg)
 
 ### 📅 Plan Your Campus Life
 
-![CampusPilot My Plan](./campuspilot-plan.png)
+![CampusPilot My Plan](./campuspilot-plan.png.jpg)
 
 ## What the final prototype demonstrates
 
